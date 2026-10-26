@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Nearby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            
+            <div class="logo">Cosmos Nearby</div>
+
+            
+            <nav class="nav">
+                <a href="#playbill">Playbill</a>
+                <a href="#speakers">Speakers</a>
+                <a href="#podcasts">Podcasts</a>
+            </nav>
+
+            <a href="#ticket" class="cta-button">Buy a Ticket</a>
+        </div>
+    </header>
+    <!-- Главный экран (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Simply About the Structure of the Universe</h1>
+            <p class="hero-subtitle">Узнай тайны космоса на открытых лекциях нашого астрономического лектория.</p>
+            <a href="#schedule" class="hero-button">Смотреть расписание</a>
+        </div>
+    </section>
+
+    <!-- Секция сетки лекций (Grid Section) -->
+    <section id="schedule" class="grid-section">
+        <div class="container">
+            <h2 class="section-title">Расписание лекций</h2>
+            
+            <div class="lectures-grid">
+                <!-- Карточка 1 -->
+                <article class="lecture-card">
+                    <div class="lecture-time">📅 28 октября, 18:00</div>
+                    <h3 class="lecture-topic">Черные дыры и искривление пространства</h3>
+                    <p class="lecture-speaker">Спикер: Д-р Алан Рихтер (PhD по астрофизике)</p>
+                    <div class="lecture-status available">Свободных мест: 14</div>
+                </article>
+
+                <!-- Карточка 2 -->
+                <article class="lecture-card">
+                    <div class="lecture-time">📅 30 октября, 19:30</div>
+                    <h3 class="lecture-topic">Эволюция звезд: от сверхновых до пульсаров</h3>
+                    <p class="lecture-speaker">Спикер: Проф. Елена Смирнова (Доктор наук)</p>
+                    <div class="lecture-status limited">Осталось мест: 3</div>
+                </article>
+
+                <!-- Карточка 3 -->
+                <article class="lecture-card">
+                    <div class="lecture-time">📅 2 ноября, 18:00</div>
+                    <h3 class="lecture-topic">В поисках экзопланет и внеземной жизни</h3>
+                    <p class="lecture-speaker">Спикер: Д-р Марк Кеннеди (Астроном)</p>
+                    <div class="lecture-status sold-out">Мест нет (sold out)</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи (Feedback Form) -->
+    <section class="form-section">
+        <div class="container">
+            <h2 class="section-title">Регистрация на онлайн-трансляции</h2>
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <button type="submit" class="submit-button">Зарегистрироваться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Cosmos Nearby</h3>
+                <p>Просветительский астрономический лекторий.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Партнеры</h4>
+                <a href="#">Бирская обсерватория</a>
+                <a href="#">Космический центр им. К. Цолковского</a>
+            </div>
+            <div class="footer-col">
+                <h4>Социальные сети</h4>
+                <a href="#">Telegram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-col">
+                <h4>Системная тема</h4>
+                <button class="theme-toggle-btn">🌙 Темная тема (Активна)</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cosmos Nearby. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -319,3 +319,22 @@ body {
     padding-top: 20px;
     font-size: 13px;
 }
+
+/* Адаптивность шапки для мобильных телефонов (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-title {
+        font-size: 32px; /* Уменьшаем заголовок на телефоне, чтобы он смотрелся гармонично */
+    }
+}

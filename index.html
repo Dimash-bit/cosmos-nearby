@@ -105,13 +105,25 @@
             </div>
             <div class="footer-col">
                 <h4>Системная тема</h4>
-                <button class="theme-toggle-btn">🌙 Темная тема (Активна)</button>
+                <button class="theme-toggle-btn" id="theme-toggle">☀️ Изменить тему</button>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Cosmos Nearby. Все права защищены.</p>
         </div>
     </footer>
+
+    <script>
+    const themeButton = document.getElementById('theme-toggle');
+    themeButton.addEventListener('click', () => {
+        document.body.classList.toggle('light-theme');
+        if (document.body.classList.contains('light-theme')) {
+            themeButton.textContent = '🌙 Темная тема';
+        } else {
+            themeButton.textContent = '☀️ Светлая тема';
+        }
+    });
+</script>
 
 </body>
 </html>

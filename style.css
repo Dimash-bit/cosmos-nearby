@@ -338,3 +338,65 @@ body {
         font-size: 32px; /* Уменьшаем заголовок на телефоне, чтобы он смотрелся гармонично */
     }
 }
+
+/* Стили для светлой темы */
+body.light-theme {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+body.light-theme .header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.light-theme .logo {
+    color: #0f172a;
+}
+
+body.light-theme .nav a {
+    color: #64748b;
+}
+
+body.light-theme .nav a:hover {
+    color: #0f172a;
+}
+
+body.light-theme .card {
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+}
+
+body.light-theme .card h3 {
+    color: #0f172a;
+}
+
+body.light-theme .card p {
+    color: #64748b;
+}
+
+body.light-theme .form-section {
+    background-color: #f1f5f9;
+}
+
+body.light-theme .feedback-form input {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    color: #0f172a;
+}
+
+body.light-theme .footer {
+    background-color: #e2e8f0;
+    border-top: 1px solid #cbd5e1;
+}
+
+body.light-theme .footer-col a, 
+body.light-theme .footer-bottom {
+    color: #64748b;
+}
+
+body.light-theme .theme-toggle-btn {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}

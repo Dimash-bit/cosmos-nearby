@@ -1,129 +1,111 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmos Nearby</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos Nearby</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            
-            <div class="logo">Cosmos Nearby</div>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="logo">Cosmos Nearby</div>
 
-            
-            <nav class="nav">
-                <a href="#playbill">Playbill</a>
-                <a href="#speakers">Speakers</a>
-                <a href="#podcasts">Podcasts</a>
-            </nav>
+    <!-- Правый блок: кнопка покупки, тема и бургер-меню -->
+    <div class="header-right">
+      <button class="buy-btn">Buy a Ticket</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">☀️</button>
+      
+      <!-- Кнопка-бургер (в том месте, где ты отметил желтым) -->
+      <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
-            <a href="#ticket" class="cta-button">Buy a Ticket</a>
-        </div>
-    </header>
-    <!-- Главный экран (Hero Section) -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Simply About the Structure of the Universe</h1>
-            <p class="hero-subtitle">Узнай тайны космоса на открытых лекциях нашого астрономического лектория.</p>
-            <a href="#schedule" class="hero-button">Смотреть расписание</a>
-        </div>
-    </section>
+    <!-- Выпадающее меню с кнопками -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#playbill">Playbill</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#podcasts">Podcasts</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
 
-    <!-- Секция сетки лекций (Grid Section) -->
-    <section id="schedule" class="grid-section">
-        <div class="container">
-            <h2 class="section-title">Расписание лекций</h2>
-            
-            <div class="lectures-grid">
-                <!-- Карточка 1 -->
-                <article class="lecture-card">
-                    <div class="lecture-time">📅 28 октября, 18:00</div>
-                    <h3 class="lecture-topic">Черные дыры и искривление пространства</h3>
-                    <p class="lecture-speaker">Спикер: Д-р Алан Рихтер (PhD по астрофизике)</p>
-                    <div class="lecture-status available">Свободных мест: 14</div>
-                </article>
+  <!-- Главный баннер -->
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Simply About the Structure of the Universe</h1>
+      <p>Узнай тайны космоса на открытых лекциях нашего астрономического лектория.</p>
+      <a href="#schedule" class="cta-btn">Смотреть расписание</a>
+    </div>
+  </main>
 
-                <!-- Карточка 2 -->
-                <article class="lecture-card">
-                    <div class="lecture-time">📅 30 октября, 19:30</div>
-                    <h3 class="lecture-topic">Эволюция звезд: от сверхновых до пульсаров</h3>
-                    <p class="lecture-speaker">Спикер: Проф. Елена Смирнова (Доктор наук)</p>
-                    <div class="lecture-status limited">Осталось мест: 3</div>
-                </article>
+  <!-- Разделы сайта -->
+  <section id="playbill" class="content-section">
+    <h2>Playbill (Афиша)</h2>
+    <p>Ближайшие лекции и мероприятия нашего лектория.</p>
+  </section>
 
-                <!-- Карточка 3 -->
-                <article class="lecture-card">
-                    <div class="lecture-time">📅 2 ноября, 18:00</div>
-                    <h3 class="lecture-topic">В поисках экзопланет и внеземной жизни</h3>
-                    <p class="lecture-speaker">Спикер: Д-р Марк Кеннеди (Астроном)</p>
-                    <div class="lecture-status sold-out">Мест нет (sold out)</div>
-                </article>
-            </div>
-        </div>
-    </section>
+  <section id="speakers" class="content-section">
+    <h2>Speakers (Спикеры)</h2>
+    <p>Наши лекторы — ведущие астрономы и исследователи космоса.</p>
+  </section>
 
-    <!-- Форма обратной связи (Feedback Form) -->
-    <section class="form-section">
-        <div class="container">
-            <h2 class="section-title">Регистрация на онлайн-трансляции</h2>
-            <form class="feedback-form">
-                <div class="form-group">
-                    <label for="name">Имя</label>
-                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-                </div>
+  <section id="podcasts" class="content-section">
+    <h2>Podcasts (Подкасты)</h2>
+    <p>Слушайте записи прошлых выступлений и обсуждения.</p>
+  </section>
 
-                <button type="submit" class="submit-button">Зарегистрироваться</button>
-            </form>
-        </div>
-    </section>
+  <section id="schedule" class="content-section">
+    <h2>Расписание</h2>
+    <p>Полный календарь событий на текущий месяц.</p>
+  </section>
 
-    <!-- Подвал (Footer) -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-col">
-                <h3>Cosmos Nearby</h3>
-                <p>Просветительский астрономический лекторий.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Партнеры</h4>
-                <a href="#">Бирская обсерватория</a>
-                <a href="#">Космический центр им. К. Цолковского</a>
-            </div>
-            <div class="footer-col">
-                <h4>Социальные сети</h4>
-                <a href="#">Telegram</a>
-                <a href="#">YouTube</a>
-                <a href="#">Instagram</a>
-            </div>
-            <div class="footer-col">
-                <h4>Системная тема</h4>
-                <button class="theme-toggle-btn" id="theme-toggle">🌙 Темная тема (Активна)</button>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Cosmos Nearby. Все права защищены.</p>
-        </div>
-    </footer>
+  <section id="pricing" class="content-section">
+    <h2>Тарифы и подписки</h2>
+    <p>Выберите подходящий абонемент на посещение лекций.</p>
+  </section>
 
-    <script>
-    const themeButton = document.getElementById('theme-toggle');
-    themeButton.addEventListener('click', () => {
-        document.body.classList.toggle('light-theme');
-        if (document.body.classList.contains('light-theme')) {
-            themeButton.textContent = '🌙 Темная тема';
-        } else {
-            themeButton.textContent = '☀️ Светлая тема';
-        }
+  <section id="contacts" class="content-section">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами: email, телефон и адрес площадки.</p>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const burgerMenu = document.getElementById('burgerMenu');
+    const navLinks = document.getElementById('navLinks');
+
+    // Клик по бургеру: открывает/закрывает 3 кнопки и превращает бургер в крестик
+    burgerMenu.addEventListener('click', () => {
+      burgerMenu.classList.toggle('active');
+      navLinks.classList.toggle('active');
     });
-</script>
 
+    // Закрывать выпадающее меню при клике на любой пункт
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        burgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Переключение темы (Светлая / Темная)
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
 </body>
 </html>
